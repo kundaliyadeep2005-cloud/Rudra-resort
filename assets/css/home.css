@@ -1,0 +1,153 @@
+/* ===== HOME / PROFILE PAGE ===== */
+
+.hp-wrapper {
+    min-height: 82vh;
+    background-color: #f5ede0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 16px;
+}
+
+/* ---- Profile Card ---- */
+.hp-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+    padding: 36px 36px 30px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    border: 1px solid #e8d5c4;
+}
+
+/* ---- Avatar ---- */
+.hp-avatar-wrap {
+    margin-bottom: 16px;
+}
+
+.hp-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #8B1A1A;
+    box-shadow: 0 3px 10px rgba(139,26,26,0.2);
+}
+
+/* ---- Name & Email ---- */
+.hp-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3c0d0d;
+    margin: 0 0 4px;
+    text-align: center;
+}
+
+.hp-email {
+    font-size: 13px;
+    color: #999;
+    margin: 0 0 4px;
+    text-align: center;
+}
+
+/* ---- Divider ---- */
+.hp-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 18px 0;
+}
+
+/* ---- Info Rows ---- */
+.hp-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+    border-bottom: 1px solid #f5f0eb;
+    font-size: 14px;
+}
+
+.hp-info-row:last-of-type {
+    border-bottom: none;
+}
+
+.hp-info-label {
+    color: #888;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.hp-info-value {
+    color: #333;
+    font-weight: 600;
+    font-size: 13px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ---- Status Badge ---- */
+.hp-status-badge {
+    background: #e8f8f0;
+    color: #1e8449;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    border: 1px solid #a9dfbf;
+}
+
+/* ---- Action Buttons ---- */
+.hp-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.hp-btn {
+    display: block;
+    width: 100%;
+    padding: 11px 0;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.15s;
+    cursor: pointer;
+    border: none;
+}
+
+.hp-btn-primary {
+    background-color: #8B1A1A;
+    color: #fff;
+}
+
+.hp-btn-primary:hover {
+    background-color: #a02020;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.hp-btn-danger {
+    background-color: #f0f0f0;
+    color: #c0392b;
+    border: 1px solid #e8c6c6;
+}
+
+.hp-btn-danger:hover {
+    background-color: #c0392b;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 480px) {
+    .hp-card {
+        padding: 28px 20px 24px;
+    }
+}

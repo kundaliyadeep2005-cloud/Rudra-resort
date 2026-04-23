@@ -1,0 +1,147 @@
+/* ===== FEEDBACK PAGE — Simple & Clean ===== */
+
+.fb-wrapper {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f4f0;
+    padding: 50px 16px;
+}
+
+.fb-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 36px 40px;
+    width: 100%;
+    max-width: 540px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.fb-heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #8B1A1A;
+    margin: 0 0 6px;
+    text-align: center;
+}
+
+.fb-sub {
+    font-size: 14px;
+    color: #777;
+    margin: 0 0 16px;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+/* ---- Fields ---- */
+.fb-field {
+    margin-bottom: 20px;
+}
+
+.fb-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* ---- Star Rating ---- */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 36px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+    color: #f0a500;
+}
+
+/* ---- Textarea ---- */
+textarea#feedback {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #333;
+    resize: vertical;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+    margin: 0;
+}
+
+textarea#feedback:focus {
+    border-color: #8B1A1A;
+}
+
+textarea#feedback::placeholder {
+    color: #aaa;
+}
+
+/* ---- Actions ---- */
+.fb-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.fb-submit-btn {
+    background-color: #8B1A1A;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 0;
+}
+
+.fb-submit-btn:hover {
+    background-color: #a02020;
+}
+
+.fb-back-link {
+    font-size: 13px;
+    color: #777;
+    text-decoration: none;
+}
+
+.fb-back-link:hover {
+    color: #8B1A1A;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 560px) {
+    .fb-box {
+        padding: 24px 20px;
+    }
+}
